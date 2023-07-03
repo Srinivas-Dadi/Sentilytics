@@ -160,12 +160,11 @@ html{
 
 .backblue-right{
     position: absolute;
-    height: 65%;
+    height: 50%;
     margin-top: 5%;
     margin-left: 5%;
     width: 30%;
     background-image: radial-gradient(lightblue,white);
-
     border-radius: 20px;
     z-index: -1;
     /* background-blend-mode: lighten; */

@@ -56,6 +56,7 @@ html {
 .signin a,
 .logo a {
     padding: 4%;
+    font-size: 2vw;
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
@@ -260,7 +261,46 @@ html {
     padding: 0% 10% 5% 10%;
     text-align: left;
 }
+/* ---------------------------------why us section------------------------------------ */
 
+.why-us{
+    padding: 1vw 10vw;  
+}
+.why-us-left{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1vw;
+    margin: .5vw;
+}
+.why-us-right{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1vw;
+    margin: .5vw;
+}
+.why-us-card{
+    background-color: #F8F8F8;
+    padding: 2vw;
+    border-radius: 10px;
+}
+.whyus-2fr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+}
+.why-us-icon{
+    width: 10vw;
+}
+.why-us-img{
+    width: 25vw;
+}
+.why-us-card h1{
+    font-size: 1.3vw; 
+}
+.why-us-card p{
+    font-size: 1.2vw; 
+}
+/* -------------------------------How it works section------------------------------- */
 .process {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -430,9 +430,39 @@ html {
 }
 /* ------------------------------------footer component------------------------------ */
 
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+    padding: 0vw 3vw;
+}
+
+.foot-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2vw;
+    border-bottom: 1px solid #4E4E4E;
+}
+
+.UtilityGuide h1,.support h1{
+    font-size: 2vw;
+    
+}
+
+.UtilityGuide li,.support li{
+    font-size: 1.3vw;
+    font-weight: 900;
+    color: #4E4E4E;
+    list-style-type: none;
+    padding: .2vw .5vw;
+}
+.social-links,.copyright{
+    font-size: 1.5vw;
+}
+
 /* and (min-width: 400px)  */
 
-@media (max-width: 900px) {
+@media (max-width: 900px) { 
     .bluerad {
         display: flex;
         flex-direction: column;

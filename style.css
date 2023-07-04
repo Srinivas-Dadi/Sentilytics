@@ -27,18 +27,23 @@ html {
 }
 
 .nav-list {
-    padding: 0px 8%;
+    padding: 0vw 4vw;
 }
 
 .nav-list ul {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
-    gap: .2rem;
+    gap: .2vw;
     background-color: rgba(0, 0, 0, 0.1);
-    padding: 2%;
+    padding: 1vw;
     border-radius: 25px;
+}
+
+.nav-list ul li a{
+    text-decoration: none;
     color: whitesmoke;
+    font-size: 1.5vw;
 }
 
 .signin,
@@ -260,18 +265,18 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    padding: 2% 10%;
+    padding: 1vw 3vw;
     text-align: center;
 }
 
 .work {
     background-color: #F9F9F9;
-    padding: 20px 15px;
+    padding: 1vw 3vw;
     border-radius: 10px;
 }
 
 .work h1{
-    font-size: 2    vw;
+    font-size: 2vw;
 }
 
 .active-work {
@@ -295,15 +300,14 @@ html {
 
 .work-des-exp p {
     padding: 10% 5px;
-    padding-bottom: 4%;
+    padding-bottom: 1vw;
     font-size: 1.5vw;
     font-weight: lighter;
 }
 
 .work-des-exp button {
-
     font-size: 1.5vw;
-    padding: 10px;
+    padding: .5vw;
     border-radius: 40px;
     border: none;
     background-color: #242331;
@@ -328,7 +332,7 @@ html {
     border-radius: 30px;
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 1rem;
+    gap: .5rem;
     overflow: hidden;
     color: white;
 }
@@ -349,29 +353,36 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.get-started-text form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .get-started-text button {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     border: none;
-    padding: 2.5%;
+    padding: .9vw;
+    font-size: 2.5vw;
     color: white;
 }
 
 .get-started-text input {
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
-    height: 5%;
-    width: 60%;
+    width: 15vw;
     border-radius: 20px;
-    margin: 5% 2%;
+    /* margin: 5% 2%; */
     color: white;
-    padding: 2.5%;
+    padding: 0vw .5vw;
+    justify-content: center;
 }
 
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
     opacity: 1;
+    font-size: 2vw;
     /* Firefox */
 }
 

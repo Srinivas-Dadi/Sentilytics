@@ -46,21 +46,24 @@ html {
     font-size: 1.5vw;
 }
 
-.signin,
-.logo {
+.signin{
     padding: 2%;
     padding-top: 8%;
     border-radius: 50%;
 }
 
-.signin a,
-.logo a {
+.signin a{
     padding: 4%;
     font-size: 2vw;
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
     color: #242331;
+}
+
+.logo img{
+
+    width: 15vw;
 }
 
 .headers {
@@ -425,6 +428,7 @@ html {
     font-size: 2vw;
     /* Firefox */
 }
+/* ------------------------------------footer component------------------------------ */
 
 /* and (min-width: 400px)  */
 

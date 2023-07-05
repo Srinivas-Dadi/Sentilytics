@@ -348,7 +348,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    padding: 1vw 3vw;
+    padding: 1vw 9vw;
     text-align: center;
 }
 
@@ -359,7 +359,7 @@ html {
 }
 
 .work h1{
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 .active-work {

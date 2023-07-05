@@ -50,8 +50,8 @@ html {
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
-    color: whitesmoke;
-    /* color : black; */
+    /* color: whitesmoke; */
+    color : black;
     font-size: 1vw;
     height: fit-content;
 }

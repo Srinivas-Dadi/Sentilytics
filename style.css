@@ -347,13 +347,13 @@ html {
 /* ---------------------------------why us section------------------------------------ */
 
 .why-us{
-    padding: 1vw 10vw;  
+    padding: 1vw 12vw;  
 }
 .why-us-left{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1vw;
-    margin: .5vw;
+    margin: 1vw;
 }
 .why-us-right{
     display: grid;
@@ -388,7 +388,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    padding: 1vw 9vw;
+    padding: 1vw 15vw;
     text-align: center;
 }
 
@@ -411,7 +411,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    padding: 5% 10%;
+    padding: 3vw 15vw;
 }
 
 .work-des-exp-head {

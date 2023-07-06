@@ -195,6 +195,7 @@ html {
     justify-content: center;
 }
 
+/* -----------------------------Features----------------------------- */
 
 .fet-head,
 .fet-exp {
@@ -211,6 +212,45 @@ html {
     background-color: #EFECFF;
     padding: 1vw 2vw;
     border-radius: 50px;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+    place-items: center;
+    text-align: center;
+    padding: 0vw 8vw;
+}
+
+.card{
+    width: 20vw;
+    height: 30vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.card:hover{
+    background-color: #F1F1F1;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.card h1{
+    font-size: 1.5vw;
+}
+
+.card p{
+    font-size: 1vw;
+    padding: 0vw 1vw;
+}
+
+.card img{
+    width: 20vw;
+    margin: 1vw;
 }
 
 .backblue-right {

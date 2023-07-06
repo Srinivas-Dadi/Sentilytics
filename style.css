@@ -7,6 +7,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 html {
@@ -513,7 +518,7 @@ html {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
     opacity: 1;
-    font-size: 2vw;
+    font-size: 1.5vw;
     /* Firefox */
 }
 /* ------------------------------------footer component------------------------------ */

@@ -15,7 +15,7 @@ html {
 }
 
 
-.nav {
+.navigation {
     display: grid;
     grid-template-columns: 1fr 2fr .5fr;
     gap: .5rem;
@@ -56,17 +56,18 @@ html {
     height: fit-content;
 }
 
-.signin{
+.sign{
     padding: .3vw;
     /* padding-top: 8%; */
     border-radius: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    top: 2vw;
 }
 
 
-.signin a{
+.sign a{
     padding: 1vw 4vw;
     font-size: .8vw;
     border-radius: 30px;
@@ -75,13 +76,12 @@ html {
     color: #242331;
 }
 
-.logo,.signbtn{
+.logo{
     display: flex;
     justify-content: center;
 }
-.signbtn{
-    margin-top: .2vw;
-}
+
+
 
 .logo img{
     width: 15vw;
@@ -206,6 +206,10 @@ html {
     font-size: 1.5vw;
 }
 
+.fet-exp h1{
+    font-size: 4vw;
+}
+
 .fet-head h1 {
     font-size: 1vw;
     color: #5236FF;
@@ -223,14 +227,14 @@ html {
     padding: 0vw 8vw;
 }
 
-.card{
+.fetcard{
     width: 20vw;
     height: 30vw;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
-.card:hover{
+.fetcard:hover{
     background-color: #F1F1F1;
     border-radius: 20px;
 }
@@ -239,16 +243,16 @@ html {
     display: none;
 }
 
-.card h1{
+.fetcard h1{
     font-size: 1.5vw;
 }
 
-.card p{
+.fetcard p{
     font-size: 1vw;
     padding: 0vw 1vw;
 }
 
-.card img{
+.fetcard img{
     width: 20vw;
     margin: 1vw;
 }
@@ -335,7 +339,6 @@ html {
 }
 
 .text h1 {
-
     font-size: 2.5vw;
     padding: 10% 10% 5% 10%;
     text-align: left;
@@ -420,12 +423,15 @@ html {
     display: flex;
     height: 18%;
     gap: 1rem;
-    font-size: 1.4vw;
+}
+
+.work-des-exp-head h1{
+    font-size: 3vw;
+    font-weight: 900;
 }
 
 .work-des-exp p {
     padding: 10% 5px;
-    padding-bottom: 1vw;
     font-size: 1.5vw;
     font-weight: lighter;
 }
@@ -512,7 +518,7 @@ html {
 }
 /* ------------------------------------footer component------------------------------ */
 
-.footer {
+/* .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1vw;
@@ -540,6 +546,163 @@ html {
 }
 .social-links,.copyright{
     font-size: 1.5vw;
+} */
+
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
 }
 
 /* and (min-width: 400px)  */
@@ -550,17 +713,17 @@ html {
         grid-template-columns: 1fr 1fr;
     }
 
-    .card {
+    .fetcard {
         width: 30vw;
         height: 40vw;
         margin: 2vw;
     }
 
-    .card h1 {
+    .fetcard h1 {
         font-size: 2vw;
     }
     
-    .card p {
+    .fetcard p {
         font-size: 1.5vw;
         padding: 0vw 1vw;
     }
@@ -604,6 +767,19 @@ html {
         height: 50vw;
         width: 20vw;
     }
+    .text h1 {
+        font-size: 3.5vw;
+        padding: 0vw 2vw;
+    }
+    
+    .text p {
+        font-size: 1.5vw;
+        padding: 0% 10% 0% 10%;
+        text-align: left;
+    }
+    .backcard {
+        height: 60vw;
+    }
 }
 
 @media (max-width: 400px) { 
@@ -612,18 +788,22 @@ html {
         grid-template-columns: 1fr ;
     }
 
-    .card {
+    .fetcard {
         width: 50vw;
-        height: 50vw;
+        height: 60vw;
         margin: 2vw;
     }
 
-    .card h1 {
-        font-size: 2vw;
+    .fetcard img{
+        width: 45vw;
+    }
+
+    .fetcard h1 {
+        font-size: 3vw;
     }
     
-    .card p {
-        font-size: 1.5vw;
+    .fetcard p {
+        font-size: 1.8vw;
         padding: 0vw 1vw;
     }
     .why-us-img{
@@ -644,5 +824,12 @@ html {
         grid-template-columns: 1fr 1fr;
         gap: 1vw;
         margin: .5vw;
+    }
+    .why-us-card h1{
+        font-size: 2vw; 
+    }
+    .why-us-card p{
+        font-size: 1.8vw; 
+        margin-bottom: 0vw;
     }
 }

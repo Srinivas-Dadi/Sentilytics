@@ -10,18 +10,18 @@
     <title>Data Analytics</title>
 </head>
 <body>
-    <div class="nav">
+    <div class="nav" id="nav">
         <div class="logo">
            <img src="./slogo.png" alt="web-logo" >
         </div>
         <div class="nav-list">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Cart</a></li>
+                <li><a id="nav-a-1" href="#">Home</a></li>
+                <li><a id="nav-a-2" href="#">About</a></li>
+                <li><a id="nav-a-3" href="#">Features</a></li>
+                <li><a id="nav-a-4" href="#">Pages</a></li>
+                <li><a id="nav-a-5" href="#">Blog</a></li>
+                <li><a id="nav-a-6" href="#">Cart</a></li>
             </ul>
         </div>
       <div class="signin">
@@ -306,6 +306,51 @@
         </div>
         <div class="copyright">Copyright © PrimeChat by VictorFlow powered by Webflow.</div>
     </div>
+    <!-- <script>
+        const [r, g, b] = [255, 255, 255]
+        const section1 = document.querySelector('nav-a') //id="nav-a"
+
+        window.addEventListener('scroll', () => {
+            let y = 1 + (window.scrollY || window.pageYOffset) / 150
+            y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
+            //const [r, g, b] = [red / y, green / y, blue / y].map(Math.round)
+            section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+        })
+    </script> -->
+    <!-- <script>
+        window.scroll(function() {
+            var scroll = window.scrollTop();
+            let id=document.querySelector('nav-a');
+            console.log(scroll);
+            if (scroll >= 10) {
+                id.style.backgroundColor = `rgb(255, 255, 255)`
+            } else id.style.backgroundColor = `rgb(0, 0, 0)`
+          });
+    </script> -->
+    <script>
+        window.addEventListener("scroll", (event) => {
+            let scroll = this.scrollY;
+            //console.log(scroll);
+            if (scroll >= 370) {
+                document.getElementById('nav-a-1').style.color = `rgb(0, 0, 0)`;
+                document.getElementById('nav-a-2').style.color = `rgb(0, 0, 0)`;
+                document.getElementById('nav-a-3').style.color = `rgb(0, 0, 0)`;
+                document.getElementById('nav-a-4').style.color = `rgb(0, 0, 0)`;
+                document.getElementById('nav-a-5').style.color = `rgb(0, 0, 0)`;
+                document.getElementById('nav-a-6').style.color = `rgb(0, 0, 0)`;               
+               // console.log('reached');
+            } 
+            else{
+                document.getElementById('nav-a-1').style.color = `rgb(255, 255, 255)`;
+                document.getElementById('nav-a-2').style.color = `rgb(255, 255, 255)`;
+                document.getElementById('nav-a-3').style.color = `rgb(255, 255, 255)`;
+                document.getElementById('nav-a-4').style.color = `rgb(255, 255, 255)`;
+                document.getElementById('nav-a-5').style.color = `rgb(255, 255, 255)`;
+                document.getElementById('nav-a-6').style.color = `rgb(255, 255, 255)`;               
+               
+            }
+        });
+    </script>
 </body>
 </html>
 

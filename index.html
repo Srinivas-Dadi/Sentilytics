@@ -482,55 +482,45 @@
             } else id.style.backgroundColor = `rgb(0, 0, 0)`
           });
     </script> -->
-    <script>
-        window.addEventListener("scroll", (event) => {
-            let scroll = this.scrollY;
-            //console.log(scroll);
-            if (scroll >= 370) {
-                document.getElementById('nav-a-1').style.color = `rgb(0, 0, 0)`;
-                document.getElementById('nav-a-2').style.color = `rgb(0, 0, 0)`;
-                document.getElementById('nav-a-3').style.color = `rgb(0, 0, 0)`;
-                document.getElementById('nav-a-4').style.color = `rgb(0, 0, 0)`;
-                document.getElementById('nav-a-5').style.color = `rgb(0, 0, 0)`;
-                document.getElementById('nav-a-6').style.color = `rgb(0, 0, 0)`;               
-               // console.log('reached');
-            } 
-            else{
-                document.getElementById('nav-a-1').style.color = `rgb(255, 255, 255)`;
-                document.getElementById('nav-a-2').style.color = `rgb(255, 255, 255)`;
-                document.getElementById('nav-a-3').style.color = `rgb(255, 255, 255)`;
-                document.getElementById('nav-a-4').style.color = `rgb(255, 255, 255)`;
-                document.getElementById('nav-a-5').style.color = `rgb(255, 255, 255)`;
-                document.getElementById('nav-a-6').style.color = `rgb(255, 255, 255)`;               
-               
-            }
-        });
-    </script>
     </div>
     <div class="mobile">
-        <!-- <div class="navigation ms-auto" id="nav">
-            <a class="logo navbar-brand">
-                <img src="./slogo.png" alt="web-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse nav-list" id="navbarSupportedContent">
-                <ul class='ms-auto'>
-                    <li class="nav-item"><a id="nav-a-1" href="#">Home</a></li>
-                    <li class="nav-item"><a id="nav-a-2" href="#">About</a></li>
-                    <li class="nav-item"><a id="nav-a-3" href="#">Features</a></li>
-                    <li class="nav-item"><a id="nav-a-4" href="#">Pages</a></li>
-                    <li class="nav-item"><a id="nav-a-5" href="#">Blog</a></li>
-                    <li class="nav-item"><a id="nav-a-6" href="#">Cart</a></li>
-                </ul>
-                <div class="sign">
-                    <div class="signbtn"><a href="#">Sign In</a></div>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./slogo.png" width="100vw" alt="website-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./slogo.png" width="250vw" alt="website-logo"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cart</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div> -->
+        </nav>
         <section>
         <div class="headers">
             <div class="header">
@@ -600,11 +590,67 @@
                             </div>
                         </div>
                     </div></center>
+                    <center><div class="col-11 feature-card fet-hidden-card">
+                        <div class="row">
+                            <div class="col-5" style="justify-content: center;align-items: center;">
+                                <img src="feature-img.png" class="f-img mt-3" alt="">
+                            </div>
+                            <div class="col"><div class="row">
+                                <div class="col-12 mt-1">
+                                <center><p class="f-head">Automated Data Collections</p></center></div>
+                                <div class="col">
+                                    <p class="f-text p-1" >Our automated data collection system meticulously scans every video on your channel, effortlessly gathering vital information such as views, comments, likes and other important metrics. We provide push notifications and easy data exports. Say goodbye to the tedious task of manually collecting data, and hello to accurate and up-to-date insights that save you valuable time and effort.</p>
+                                </div>
+                            </div></div>
+                        </div>
+                    </div></center>
+                    <center><div class="col-11 feature-card fet-hidden-card">
+                        <div class="row">
+                            <div class="col"><div class="row">
+                                <div class="col-12 mt-1">
+                                <center><p class="f-head">Automated Data Collections</p></center></div>
+                                <div class="col">
+                                    <p class="f-text p-1" >Our automated data collection system meticulously scans every video on your channel, effortlessly gathering vital information such as views, comments, likes and other important metrics. We provide push notifications and easy data exports. Say goodbye to the tedious task of manually collecting data, and hello to accurate and up-to-date insights that save you valuable time and effort.</p>
+                                </div>
+                            </div></div>
+                            <div class="col-5" style="justify-content: center;align-items: center;">
+                                <img src="feature-img.png" class="f-img mt-3" alt="">
+                            </div>
+                        </div>
+                    </div></center>
+                    <center><div class="col-11 feature-card fet-hidden-card">
+                        <div class="row">
+                            <div class="col-5" style="justify-content: center;align-items: center;">
+                                <img src="feature-img.png" class="f-img mt-3" alt="">
+                            </div>
+                            <div class="col"><div class="row">
+                                <div class="col-12 mt-1">
+                                <center><p class="f-head">Automated Data Collections</p></center></div>
+                                <div class="col">
+                                    <p class="f-text p-1" >Our automated data collection system meticulously scans every video on your channel, effortlessly gathering vital information such as views, comments, likes and other important metrics. We provide push notifications and easy data exports. Say goodbye to the tedious task of manually collecting data, and hello to accurate and up-to-date insights that save you valuable time and effort.</p>
+                                </div>
+                            </div></div>
+                        </div>
+                    </div></center>
+
+                    <center><div class="col-11 feature-card fet-hidden-card">
+                        <div class="row">
+                            <div class="col"><div class="row">
+                                <div class="col-12 mt-1">
+                                <center><p class="f-head">Automated Data Collections</p></center></div>
+                                <div class="col">
+                                    <p class="f-text p-1" >Our automated data collection system meticulously scans every video on your channel, effortlessly gathering vital information such as views, comments, likes and other important metrics. We provide push notifications and easy data exports. Say goodbye to the tedious task of manually collecting data, and hello to accurate and up-to-date insights that save you valuable time and effort.</p>
+                                </div>
+                            </div></div>
+                            <div class="col-5" style="justify-content: center;align-items: center;">
+                                <img src="feature-img.png" class="f-img mt-3" alt="">
+                            </div>
+                        </div>
+                    </div></center>
                 </div>
-    
             </div>
         </section>
-        <center><button class="see-more">See More</button></center>
+        <center><button class="see-more" onclick="featureDisplay()">See More</button></center>
         <section class="mt-3">
             <div class="container">
                 <div class="row">
@@ -800,7 +846,37 @@
             </div>
         </footer>
     </div>
-
 </body>
+<script>
+    window.addEventListener("scroll", (event) => {
+        let scroll = this.scrollY;
+        //console.log(scroll);
+        if (scroll >= 370) {
+            document.getElementById('nav-a-1').style.color = `rgb(0, 0, 0)`;
+            document.getElementById('nav-a-2').style.color = `rgb(0, 0, 0)`;
+            document.getElementById('nav-a-3').style.color = `rgb(0, 0, 0)`;
+            document.getElementById('nav-a-4').style.color = `rgb(0, 0, 0)`;
+            document.getElementById('nav-a-5').style.color = `rgb(0, 0, 0)`;
+            document.getElementById('nav-a-6').style.color = `rgb(0, 0, 0)`;               
+           // console.log('reached');
+        } 
+        else{
+            document.getElementById('nav-a-1').style.color = `rgb(255, 255, 255)`;
+            document.getElementById('nav-a-2').style.color = `rgb(255, 255, 255)`;
+            document.getElementById('nav-a-3').style.color = `rgb(255, 255, 255)`;
+            document.getElementById('nav-a-4').style.color = `rgb(255, 255, 255)`;
+            document.getElementById('nav-a-5').style.color = `rgb(255, 255, 255)`;
+            document.getElementById('nav-a-6').style.color = `rgb(255, 255, 255)`;               
+           
+        }
+    });
+</script>
+
+<script>
+    
+
+
+</script>
+
 </html>
 

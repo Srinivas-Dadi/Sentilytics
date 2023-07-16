@@ -48,6 +48,7 @@ html {
     padding: 1vw;
     border-radius: 50px;
     backdrop-filter: blur(3px);
+    margin-bottom: 0px;
 }
 
 .nav-list ul li a{
@@ -61,35 +62,33 @@ html {
     height: fit-content;
 }
 
-.sign{
-    padding: .3vw;
+.sign-in-button{
+    /* padding: .3vw; */
     /* padding-top: 8%; */
+    padding-bottom: .3vw ;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    top: 10vw;
+    justify-content: center;
 }
 
-
-.sign a{
+ 
+.sign-in-button a{
     padding: 1vw 4vw;
-    font-size: .8vw;
+    font-size: 1vw;
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
     color: #242331;
-}
+} 
 
 .logo{
     display: flex;
     justify-content: center;
 }
 
-
-
 .logo img{
-    width: 25vw;
+    width: 15vw;
 }
 
 .headers {
@@ -409,7 +408,7 @@ html {
 }
 
 .work h1{
-    font-size: 1vw;
+    font-size: 1.43vw;
 }
 
 .active-work {
@@ -789,6 +788,22 @@ html {
     .backcard {
         height: 60vw;
     }
+
+    .sign-in-button{
+        /* padding: .vw; */
+        /* padding-top: 8%; */
+        margin-bottom: 1vw;
+        
+    }
+    
+    .sign-in-button a{
+        padding: 1vw 4vw;
+        font-size: 1vw;
+        border-radius: 30px;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        color: #242331;
+    } 
 }
 
 @media (max-width: 400px) { 
@@ -864,7 +879,7 @@ html {
     .headers{
         margin-top: 50px;
     }
-    .hidden-card{
+    .fet-hidden-card{
         display: none;
     }
 }

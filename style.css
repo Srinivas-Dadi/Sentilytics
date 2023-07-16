@@ -651,7 +651,7 @@ html {
 }
 .footer-widget ul li {
   display: inline-block;
-  float: left;
+  /* float: left; */
   width: 50%;
   margin-bottom: 12px;
 }
@@ -708,6 +708,10 @@ html {
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+}
+
+.mobile{
+    display: none;
 }
 
 /* and (min-width: 400px)  */
@@ -788,7 +792,8 @@ html {
 }
 
 @media (max-width: 400px) { 
-    .features{
+
+    /* .features{
         display: grid;
         grid-template-columns: 1fr ;
     }
@@ -836,6 +841,12 @@ html {
     .why-us-card p{
         font-size: 1.8vw; 
         margin-bottom: 0vw;
+    } */
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display:contents;
     }
 }
 

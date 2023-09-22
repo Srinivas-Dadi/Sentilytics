@@ -65,7 +65,7 @@
     <div class="fet-exp">
         <h1>Powerfull features which boost <br> your productivity</h1>
     </div>
-    <div class="features">
+    <div class="features reveal">
         <div class="fetcard">
             <img src="./Icon.png" alt="" srcset="">
             <h1>Automated Data Collections</h1>
@@ -275,9 +275,6 @@
             </div>
         </div>
     </div>
-
-
-    
     <div class="fet-head">
         <h1>How It Works</h1><br>
     </div>
@@ -580,8 +577,7 @@
   
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2021 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      © 2021 Copyrigh Sentilytics
     </div>
     <!-- Copyright -->
   </footer>
@@ -714,7 +710,7 @@
                             </div>
                         </div>
                     </div></center>
-                    <center><div class="col-11 feature-card fet-hidden-card">
+                    <center><div class="col-11 feature-card fet-hidden-card" id="fet-hidden-card1">
                         <div class="row">
                             <div class="col-5" style="justify-content: center;align-items: center;">
                                 <img src="feature-img.png" class="f-img mt-3" alt="">
@@ -728,7 +724,7 @@
                             </div></div>
                         </div>
                     </div></center>
-                    <center><div class="col-11 feature-card fet-hidden-card">
+                    <center><div class="col-11 feature-card fet-hidden-card" id="fet-hidden-card2">
                         <div class="row">
                             <div class="col"><div class="row">
                                 <div class="col-12 mt-1">
@@ -742,7 +738,7 @@
                             </div>
                         </div>
                     </div></center>
-                    <center><div class="col-11 feature-card fet-hidden-card">
+                    <center><div class="col-11 feature-card fet-hidden-card" id="fet-hidden-card3">
                         <div class="row">
                             <div class="col-5" style="justify-content: center;align-items: center;">
                                 <img src="feature-img.png" class="f-img mt-3" alt="">
@@ -757,7 +753,7 @@
                         </div>
                     </div></center>
 
-                    <center><div class="col-11 feature-card fet-hidden-card">
+                    <center><div class="col-11 feature-card fet-hidden-card" id="fet-hidden-card4">
                         <div class="row">
                             <div class="col"><div class="row">
                                 <div class="col-12 mt-1">
@@ -916,16 +912,16 @@
                       Products
                     </h6>
                     <p>
-                      <a href="#!" class="text-reset">Angular</a>
+                      <a href="#!" class="text-reset">Login</a>
                     </p>
                     <p>
-                      <a href="#!" class="text-reset">React</a>
+                      <a href="#!" class="text-reset">Sign Up</a>
                     </p>
                     <p>
-                      <a href="#!" class="text-reset">Vue</a>
+                      <a href="#!" class="text-reset">Create Account</a>
                     </p>
                     <p>
-                      <a href="#!" class="text-reset">Laravel</a>
+                      <a href="#!" class="text-reset">features</a>
                     </p>
                   </div>
                   <!-- Grid column -->
@@ -972,8 +968,7 @@
           
             <!-- Copyright -->
             <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-              © 2021 Copyright:
-              <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+              © 2021 Copyright: Sentilytics
             </div>
             <!-- Copyright -->
           </footer>
@@ -1003,11 +998,38 @@
         }
     });
 </script>
+<!-- document.querySelector('#fet-hidden-card').style.display = 'block'; -->
+  <!-- document.getElementsByClassName('fet-hidden-card').style.display = 'block'; -->
+<script>
+    function featureDisplay(){
+        document.getElementById('fet-hidden-card1').style.display = 'block';
+        document.getElementById('fet-hidden-card2').style.display = 'block';
+        document.getElementById('fet-hidden-card3').style.display = 'block';
+        document.getElementById('fet-hidden-card4').style.display = 'block';
+        console.log('featureDisplay');
+    }
+
+</script>
 
 <script>
-    
-
-
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      
 </script>
 
 </html>

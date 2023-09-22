@@ -884,6 +884,28 @@ html {
     .fet-hidden-card{
         display: none;
     }
+
+    .why-us{
+        padding: 1vw 3vw;
+    }
+
+    .process{
+        padding: .5vw 6vw;
+    }
+
+    .work-des{
+        padding: 2vw 7vw;
+    }
+
+    .get-start {
+        padding: 0vw 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .get-started-text form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 .features-heading{
@@ -1046,9 +1068,6 @@ background: #1758A0;
 .feature{
     margin-top:40%;
 }
-
-
-  
 
 .reveal{
     position: relative;
